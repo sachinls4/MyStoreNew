@@ -16,7 +16,4 @@ public class MyAccountsPage {
 		System.out.println("INSIDE MyAccountsPage CONSTRUCTOR");
 	}
 	
-	
-	
-	
 }
