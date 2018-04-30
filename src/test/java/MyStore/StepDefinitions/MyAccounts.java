@@ -8,6 +8,7 @@ import org.apache.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.Assert;
@@ -87,7 +88,10 @@ public class MyAccounts {
 	  public void clickOnDressesMegaMenu() throws IOException {
 	try {
 		Thread.sleep(3000);
-		myaccountpageobj.dresses_Menu.click();
+		Actions action = new Actions(baseclass.driver);
+//		WebElement we = webdriver.findElement(By.xpath("//html/body/div[13]/ul/li[4]/a"));
+		action.moveToElement(myaccountpageobj.dresses_Menu).build().perform();
+//		myaccountpageobj.dresses_Menu.click();
 		String message = "Step:"+(counter++)+"PASSED- user clicks on Dresses Mega Menu";
 		logger.info(message);
 		HTMLReportGenerator.StepDetails("PASS", "clickOnDressesMegaMenu", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
@@ -103,7 +107,7 @@ public class MyAccounts {
 	@And ("^user clicks on Summer Dresses mega menu$")
 	  public void clickOnSummerDressesMegaMenu() throws IOException {
 	try {
-		Thread.sleep(3000);
+		Thread.sleep(3000);		
 		myaccountpageobj.summer_Dresses_Menu.click();
 		String message = "Step:"+(counter++)+"PASSED- user clicks on Summer Dresses Mega Menu";
 		logger.info(message);
@@ -151,8 +155,7 @@ public class MyAccounts {
        @After()
        public void AfterEveryScenario(Scenario scenario) {
     	   counter = 0;
-    	   baseclass.driver.close();
     	   HTMLReportGenerator.TestCaseEnd();
-    	   HTMLReportGenerator.TestSuiteEnd();
+    	   HTMLReportGenerator.TestSuiteEnd();    	   
     	   }
        }

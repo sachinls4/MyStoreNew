@@ -49,4 +49,4 @@ Feature: Login Feature
     And user clicks on SignIn button
     And user clicks on Dresses mega menu
     And user clicks on Summer Dresses mega menu
-    Then Summer Dresses page opens with text as "Summer Dresses"    
+    Then Summer Dresses page opens with text as "SUMMER DRESSES "    

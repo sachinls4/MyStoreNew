@@ -16,10 +16,10 @@ public class MyAccountsPage {
 		System.out.println("INSIDE MyAccountsPage CONSTRUCTOR");
 	}
 	
-	@FindBy(how=How.XPATH, using="//a[@title='Dresses']")
+	@FindBy(how=How.XPATH, using=".//*[@id='block_top_menu']/ul/li[2]/a")
 	public WebElement dresses_Menu;
 	
-	@FindBy(how=How.XPATH, using="//a[@title='Summer Dresses']")
+	@FindBy(how=How.XPATH, using=".//*[@id='block_top_menu']/ul/li[2]/ul/li[3]/a")
 	public WebElement summer_Dresses_Menu;
 	
 	@FindBy(how=How.XPATH, using="//input[@id='email']")
