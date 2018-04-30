@@ -1,0 +1,715 @@
+2018-04-28 12:16:53 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-28 12:18:02 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-28 12:23:56 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-28 12:29:09 INFO  Login:53 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-28 12:29:13 INFO  Login:63 - Step:2 PASSED- user is on the application login page
+2018-04-28 12:32:25 INFO  Login:53 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-28 12:32:29 INFO  Login:63 - Step:2 PASSED- user is on the application login page
+2018-04-28 12:32:33 INFO  Login:80 - Step:3 PASSED- user clicks on SignInLink
+2018-04-28 12:32:36 INFO  Login:96 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-28 12:34:21 INFO  Login:53 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-28 12:34:24 INFO  Login:63 - Step:2 PASSED- user is on the application login page
+2018-04-28 12:34:28 INFO  Login:80 - Step:3 PASSED- user clicks on SignInLink
+2018-04-28 12:34:31 INFO  Login:96 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-28 12:34:32 INFO  Login:117 - Step:5 FAILED- user is failed to click on Sign In link
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender1']"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='id_gender1']}
+2018-04-28 12:34:32 INFO  Login:134 - Step:6 FAILED- user Failed to enter FirstNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 21 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-28 12:34:32 INFO  Login:153 - Step:7 FAILED- user Failed to enter LastNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-28 12:34:33 INFO  Login:172 - Step:8 FAILED- user Failed to enter PasswordUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-28 12:34:33 INFO  Login:193 - Step:9 FAILED- user Failed to enter CompanyUnable to locate element: {"method":"xpath","selector":"//input[@id='company']"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='company']}
+2018-04-28 12:34:33 INFO  Login:211 - Step:10 FAILED- user Failed to enter AddressUnable to locate element: {"method":"xpath","selector":"//input[@id='address1']"}
+Command duration or timeout: 24 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='address1']}
+2018-04-28 12:34:34 INFO  Login:229 - Step:11 FAILED- user Failed to enter CityUnable to locate element: {"method":"xpath","selector":"//input[@id='city']"}
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='city']}
+2018-04-28 12:34:35 INFO  Login:251 - Step:12 PASSED- user selects City as Alabama
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//select[@id='id_state']"}
+Command duration or timeout: 19 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//select[@id='id_state']}
+2018-04-28 12:34:35 INFO  Login:268 - Step:13 FAILED- user Failed to enter ZipCodeUnable to locate element: {"method":"xpath","selector":"//input[@id='postcode']"}
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='postcode']}
+2018-04-28 12:34:37 INFO  Login:290 - Step:14 PASSED- user selects country as United States
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//select[@id='id_country']"}
+Command duration or timeout: 17 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//select[@id='id_country']}
+2018-04-28 12:34:37 INFO  Login:307 - Step:15 FAILED- user Failed to enter mobileUnable to locate element: {"method":"xpath","selector":"//input[@id='phone_mobile']"}
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='phone_mobile']}
+2018-04-28 12:34:37 INFO  Login:324 - Step:16 FAILED- user Failed to enter aliasaddUnable to locate element: {"method":"xpath","selector":"//input[@id='alias']"}
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ddccbd0c-10a7-44a2-9f2c-123f64780892
+*** Element info: {Using=xpath, value=//input[@id='alias']}
+2018-04-29 18:12:37 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 18:12:43 INFO  Login:62 - Step:2 PASSED- user is on the application login page
+2018-04-29 18:12:47 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 18:12:52 INFO  Login:95 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 18:12:52 INFO  Login:116 - Step:5 FAILED- user is failed to click on Sign In link
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender1']"}
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='id_gender1']}
+2018-04-29 18:12:52 INFO  Login:133 - Step:6 FAILED- user Failed to enter FirstNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 27 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:12:53 INFO  Login:152 - Step:7 FAILED- user Failed to enter LastNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 26 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:12:53 INFO  Login:171 - Step:8 FAILED- user Failed to enter PasswordUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 37 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:12:54 INFO  Login:192 - Step:9 FAILED- user Failed to enter CompanyUnable to locate element: {"method":"xpath","selector":"//input[@id='company']"}
+Command duration or timeout: 251 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='company']}
+2018-04-29 18:12:54 INFO  Login:210 - Step:10 FAILED- user Failed to enter AddressUnable to locate element: {"method":"xpath","selector":"//input[@id='address1']"}
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='address1']}
+2018-04-29 18:12:54 INFO  Login:228 - Step:11 FAILED- user Failed to enter CityUnable to locate element: {"method":"xpath","selector":"//input[@id='city']"}
+Command duration or timeout: 27 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='city']}
+2018-04-29 18:12:56 INFO  Login:250 - Step:12 PASSED- user selects City as Alabama
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//select[@id='id_state']"}
+Command duration or timeout: 27 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//select[@id='id_state']}
+2018-04-29 18:12:56 INFO  Login:267 - Step:13 FAILED- user Failed to enter ZipCodeUnable to locate element: {"method":"xpath","selector":"//input[@id='postcode']"}
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='postcode']}
+2018-04-29 18:12:58 INFO  Login:289 - Step:14 PASSED- user selects country as United States
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//select[@id='id_country']"}
+Command duration or timeout: 15 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//select[@id='id_country']}
+2018-04-29 18:12:58 INFO  Login:306 - Step:15 FAILED- user Failed to enter mobileUnable to locate element: {"method":"xpath","selector":"//input[@id='phone_mobile']"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='phone_mobile']}
+2018-04-29 18:12:58 INFO  Login:323 - Step:16 FAILED- user Failed to enter aliasaddUnable to locate element: {"method":"xpath","selector":"//input[@id='alias']"}
+Command duration or timeout: 21 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad51c668-c49c-4144-9a6f-2bab3dde2974
+*** Element info: {Using=xpath, value=//input[@id='alias']}
+2018-04-29 18:20:18 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 18:23:31 INFO  Login:62 - Step:2 PASSED- user is on the application login page
+2018-04-29 18:23:56 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 18:24:03 INFO  Login:95 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 18:24:08 INFO  Login:116 - Step:5 FAILED- user is failed to click on Sign In link
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender1']"}
+Command duration or timeout: 35 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='id_gender1']}
+2018-04-29 18:24:11 INFO  Login:133 - Step:6 FAILED- user Failed to enter FirstNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 45 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:24:13 INFO  Login:152 - Step:7 FAILED- user Failed to enter LastNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 37 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:24:14 INFO  Login:171 - Step:8 FAILED- user Failed to enter PasswordUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 74 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:24:16 INFO  Login:192 - Step:9 FAILED- user Failed to enter CompanyUnable to locate element: {"method":"xpath","selector":"//input[@id='company']"}
+Command duration or timeout: 36 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='company']}
+2018-04-29 18:24:18 INFO  Login:210 - Step:10 FAILED- user Failed to enter AddressUnable to locate element: {"method":"xpath","selector":"//input[@id='address1']"}
+Command duration or timeout: 40 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='address1']}
+2018-04-29 18:24:20 INFO  Login:228 - Step:11 FAILED- user Failed to enter CityUnable to locate element: {"method":"xpath","selector":"//input[@id='city']"}
+Command duration or timeout: 34 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='city']}
+2018-04-29 18:24:23 INFO  Login:250 - Step:12 PASSED- user selects City as Alabama
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//select[@id='id_state']"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//select[@id='id_state']}
+2018-04-29 18:24:38 INFO  Login:267 - Step:13 FAILED- user Failed to enter ZipCodeUnable to locate element: {"method":"xpath","selector":"//input[@id='postcode']"}
+Command duration or timeout: 52 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='postcode']}
+2018-04-29 18:24:43 INFO  Login:289 - Step:14 PASSED- user selects country as United States
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//select[@id='id_country']"}
+Command duration or timeout: 56 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//select[@id='id_country']}
+2018-04-29 18:24:44 INFO  Login:306 - Step:15 FAILED- user Failed to enter mobileUnable to locate element: {"method":"xpath","selector":"//input[@id='phone_mobile']"}
+Command duration or timeout: 27 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='phone_mobile']}
+2018-04-29 18:24:46 INFO  Login:323 - Step:16 FAILED- user Failed to enter aliasaddUnable to locate element: {"method":"xpath","selector":"//input[@id='alias']"}
+Command duration or timeout: 33 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 84b9f4b0-62cd-4dcf-b16d-aea79dd62450
+*** Element info: {Using=xpath, value=//input[@id='alias']}
+2018-04-29 18:32:37 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 18:32:40 INFO  Login:62 - Step:2 PASSED- user is on the application login page
+2018-04-29 18:32:43 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 18:32:46 INFO  Login:95 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 18:32:47 INFO  Login:116 - Step:5 FAILED- user fails to select title as Mr. 
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender1']"}
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='id_gender1']}
+2018-04-29 18:32:47 INFO  Login:133 - Step:6 FAILED- user Failed to enter FirstNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:32:48 INFO  Login:152 - Step:7 FAILED- user Failed to enter LastNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 21 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:32:48 INFO  Login:171 - Step:8 FAILED- user Failed to enter PasswordUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 22 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:32:48 INFO  Login:192 - Step:9 FAILED- user Failed to enter CompanyUnable to locate element: {"method":"xpath","selector":"//input[@id='company']"}
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='company']}
+2018-04-29 18:32:49 INFO  Login:210 - Step:10 FAILED- user Failed to enter AddressUnable to locate element: {"method":"xpath","selector":"//input[@id='address1']"}
+Command duration or timeout: 26 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='address1']}
+2018-04-29 18:32:49 INFO  Login:228 - Step:11 FAILED- user Failed to enter CityUnable to locate element: {"method":"xpath","selector":"//input[@id='city']"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='city']}
+2018-04-29 18:32:50 INFO  Login:250 - Step:12 PASSED- user selects City as Alabama
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//select[@id='id_state']"}
+Command duration or timeout: 25 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//select[@id='id_state']}
+2018-04-29 18:32:51 INFO  Login:267 - Step:13 FAILED- user Failed to enter ZipCodeUnable to locate element: {"method":"xpath","selector":"//input[@id='postcode']"}
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='postcode']}
+2018-04-29 18:32:52 INFO  Login:289 - Step:14 PASSED- user selects country as United States
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//select[@id='id_country']"}
+Command duration or timeout: 23 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//select[@id='id_country']}
+2018-04-29 18:32:52 INFO  Login:306 - Step:15 FAILED- user Failed to enter mobileUnable to locate element: {"method":"xpath","selector":"//input[@id='phone_mobile']"}
+Command duration or timeout: 26 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='phone_mobile']}
+2018-04-29 18:32:53 INFO  Login:323 - Step:16 FAILED- user Failed to enter aliasaddUnable to locate element: {"method":"xpath","selector":"//input[@id='alias']"}
+Command duration or timeout: 344 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: b022a86d-1181-461d-932a-5173d6d4fba8
+*** Element info: {Using=xpath, value=//input[@id='alias']}
+2018-04-29 18:45:36 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 18:45:39 INFO  Login:62 - Step:2 PASSED- user is on the application login page
+2018-04-29 18:45:42 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 18:45:45 INFO  Login:111 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 18:45:46 INFO  Login:95 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 18:45:47 INFO  Login:132 - Step:6 FAILED- user fails to select title as Mr. 
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender1']"}
+Command duration or timeout: 14 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad41cf46-5bbf-4e56-ba6a-b83fa7377734
+*** Element info: {Using=xpath, value=//input[@id='id_gender1']}
+2018-04-29 18:45:47 INFO  Login:149 - Step:7 FAILED- user Failed to enter FirstNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 43 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad41cf46-5bbf-4e56-ba6a-b83fa7377734
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:45:47 INFO  Login:168 - Step:8 FAILED- user Failed to enter LastNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 47 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: ad41cf46-5bbf-4e56-ba6a-b83fa7377734
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:45:48 INFO  Login:183 - Step:9 PASSED- user enter windows@123 as password
+2018-04-29 18:45:49 INFO  Login:204 - Step:10 PASSED- user enter Yahoo as company
+2018-04-29 18:45:50 INFO  Login:222 - Step:11 PASSED- user enter First Lane Narhe as address
+2018-04-29 18:45:50 INFO  Login:240 - Step:12 PASSED- user enter Romulus as city
+2018-04-29 18:45:52 INFO  Login:261 - Step:13 PASSED- user selects City as Alabama
+2018-04-29 18:45:53 INFO  Login:279 - Step:14 PASSED- user enter 0000 as zip
+2018-04-29 18:45:54 INFO  Login:300 - Step:15 PASSED- user selects country as United States
+2018-04-29 18:45:55 INFO  Login:318 - Step:16 PASSED- user enter 9898989898 as mobile
+2018-04-29 18:45:55 INFO  Login:335 - Step:17 PASSED- user enter Test Address as aliasadd
+2018-04-29 18:47:51 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 18:48:03 INFO  Login:62 - Step:2 PASSED- user is on the application login page
+2018-04-29 18:48:12 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 18:48:26 INFO  Login:112 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 18:48:28 INFO  Login:96 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 18:48:28 INFO  Login:133 - Step:6 FAILED- user fails to select title as Mr. 
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender1']"}
+Command duration or timeout: 18 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a86baca4-f428-4d8d-89f9-ce4f38909f36
+*** Element info: {Using=xpath, value=//input[@id='id_gender1']}
+2018-04-29 18:48:29 INFO  Login:150 - Step:7 FAILED- user Failed to enter FirstNameUnable to locate element: {"method":"xpath","selector":"//input[@id='customer_firstname']"}
+Command duration or timeout: 43 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: a86baca4-f428-4d8d-89f9-ce4f38909f36
+*** Element info: {Using=xpath, value=//input[@id='customer_firstname']}
+2018-04-29 18:48:29 INFO  Login:165 - Step:8 PASSED- user enter Patil as lastname
+2018-04-29 18:48:31 INFO  Login:184 - Step:9 PASSED- user enter windows@123 as password
+2018-04-29 18:48:32 INFO  Login:205 - Step:10 PASSED- user enter Yahoo as company
+2018-04-29 18:48:33 INFO  Login:223 - Step:11 PASSED- user enter First Lane Narhe as address
+2018-04-29 18:48:34 INFO  Login:241 - Step:12 PASSED- user enter Romulus as city
+2018-04-29 18:48:36 INFO  Login:262 - Step:13 PASSED- user selects City as Alabama
+2018-04-29 18:48:37 INFO  Login:280 - Step:14 PASSED- user enter 0000 as zip
+2018-04-29 18:48:39 INFO  Login:301 - Step:15 PASSED- user selects country as United States
+2018-04-29 18:48:39 INFO  Login:319 - Step:16 PASSED- user enter 9898989898 as mobile
+2018-04-29 18:48:40 INFO  Login:336 - Step:17 PASSED- user enter Test Address as aliasadd
+2018-04-29 18:58:49 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 19:02:32 INFO  Login:62 - Step:2 PASSED- user is on the application login page
+2018-04-29 19:05:00 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 19:05:32 INFO  Login:112 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 19:05:40 INFO  Login:96 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 19:05:47 INFO  Login:129 - Step:6 PASSED- user clicks on Title
+2018-04-29 19:05:55 INFO  Login:146 - Step:7 PASSED- user enter Amit as firstname
+2018-04-29 19:06:02 INFO  Login:165 - Step:8 PASSED- user enter Patil as lastname
+2018-04-29 19:06:10 INFO  Login:184 - Step:9 PASSED- user enter windows@123 as password
+2018-04-29 19:06:18 INFO  Login:205 - Step:10 PASSED- user enter Yahoo as company
+2018-04-29 19:06:27 INFO  Login:223 - Step:11 PASSED- user enter First Lane Narhe as address
+2018-04-29 19:06:34 INFO  Login:241 - Step:12 PASSED- user enter Romulus as city
+2018-04-29 19:06:43 INFO  Login:262 - Step:13 PASSED- user selects City as Alabama
+2018-04-29 19:06:51 INFO  Login:280 - Step:14 PASSED- user enter 0000 as zip
+2018-04-29 19:06:59 INFO  Login:301 - Step:15 PASSED- user selects country as United States
+2018-04-29 19:07:06 INFO  Login:319 - Step:16 PASSED- user enter 9898989898 as mobile
+2018-04-29 19:07:13 INFO  Login:336 - Step:17 PASSED- user enter Test Address as aliasadd
+2018-04-29 19:21:41 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 19:21:45 INFO  Login:63 - Step:2 PASSED- user is on the application login page
+2018-04-29 19:21:50 INFO  Login:80 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 19:21:53 INFO  Login:114 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 19:21:56 INFO  Login:97 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 19:21:57 INFO  Login:132 - Step:6 PASSED- user clicks on Title
+2018-04-29 19:21:59 INFO  Login:149 - Step:7 PASSED- user enter Amit as firstname
+2018-04-29 19:22:01 INFO  Login:168 - Step:8 PASSED- user enter Patil as lastname
+2018-04-29 19:22:03 INFO  Login:184 - Step:9 PASSED- user enter windows@123 as password
+2018-04-29 19:22:04 INFO  Login:201 - Step:10 PASSED- user enter Yahoo as company
+2018-04-29 19:22:06 INFO  Login:217 - Step:11 PASSED- user enter First Lane Narhe as address
+2018-04-29 19:22:08 INFO  Login:234 - Step:12 PASSED- user enter Romulus as city
+2018-04-29 19:22:10 INFO  Login:252 - Step:13 PASSED- user selects City as Alabama
+2018-04-29 19:22:10 INFO  Login:267 - Step:14 PASSED- user enter 0000 as zip
+2018-04-29 19:22:12 INFO  Login:286 - Step:15 PASSED- user selects country as United States
+2018-04-29 19:22:14 INFO  Login:302 - Step:16 PASSED- user enter 9898989898 as mobile
+2018-04-29 19:22:15 INFO  Login:319 - Step:17 PASSED- user enter Test Address as aliasadd
+2018-04-29 19:22:18 INFO  Login:336 - Step:18 PASSED- user clicks on Register button
+2018-04-29 19:22:20 INFO  Login:353 - Step:19 PASSED- user is on the MyAccountPage
+2018-04-29 19:26:31 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 19:26:35 INFO  Login:63 - Step:2 PASSED- user is on the application login page
+2018-04-29 19:26:40 INFO  Login:80 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 19:26:44 INFO  Login:114 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 19:26:46 INFO  Login:97 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 19:26:48 INFO  Login:136 - Step:6 FAILED- user fails to select title as Mr. 
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender1']"}
+Command duration or timeout: 46 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 2ce497c3-de3d-47cf-ae15-f2d6d4a55f8a
+*** Element info: {Using=xpath, value=//input[@id='id_gender1']}
+2018-04-29 19:26:49 INFO  Login:149 - Step:7 PASSED- user enter Amit as firstname
+2018-04-29 19:26:51 INFO  Login:168 - Step:8 PASSED- user enter Patil as lastname
+2018-04-29 19:26:53 INFO  Login:184 - Step:9 PASSED- user enter windows@123 as password
+2018-04-29 19:26:54 INFO  Login:201 - Step:10 PASSED- user enter Yahoo as company
+2018-04-29 19:26:56 INFO  Login:217 - Step:11 PASSED- user enter First Lane Narhe as address
+2018-04-29 19:26:58 INFO  Login:234 - Step:12 PASSED- user enter Romulus as city
+2018-04-29 19:26:59 INFO  Login:252 - Step:13 PASSED- user selects City as Alabama
+2018-04-29 19:27:00 INFO  Login:267 - Step:14 PASSED- user enter 0000 as zip
+2018-04-29 19:27:02 INFO  Login:286 - Step:15 PASSED- user selects country as United States
+2018-04-29 19:27:03 INFO  Login:302 - Step:16 PASSED- user enter 9898989898 as mobile
+2018-04-29 19:27:05 INFO  Login:319 - Step:17 PASSED- user enter Test Address as aliasadd
+2018-04-29 19:27:08 INFO  Login:336 - Step:18 PASSED- user clicks on Register button
+2018-04-29 19:27:10 INFO  Login:353 - Step:19 PASSED- user is on the MyAccountPage
+2018-04-29 19:28:14 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 19:28:19 INFO  Login:63 - Step:2 PASSED- user is on the application login page
+2018-04-29 19:28:23 INFO  Login:80 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 19:28:27 INFO  Login:114 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 19:28:29 INFO  Login:97 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 19:28:32 INFO  Login:132 - Step:6 PASSED- user clicks on Title
+2018-04-29 19:28:33 INFO  Login:149 - Step:7 PASSED- user enter Amit as firstname
+2018-04-29 19:28:35 INFO  Login:168 - Step:8 PASSED- user enter Patil as lastname
+2018-04-29 19:28:36 INFO  Login:184 - Step:9 PASSED- user enter windows@123 as password
+2018-04-29 19:28:38 INFO  Login:201 - Step:10 PASSED- user enter Yahoo as company
+2018-04-29 19:28:40 INFO  Login:217 - Step:11 PASSED- user enter First Lane Narhe as address
+2018-04-29 19:28:41 INFO  Login:234 - Step:12 PASSED- user enter Romulus as city
+2018-04-29 19:28:43 INFO  Login:252 - Step:13 PASSED- user selects City as Alabama
+2018-04-29 19:28:44 INFO  Login:267 - Step:14 PASSED- user enter 0000 as zip
+2018-04-29 19:28:45 INFO  Login:286 - Step:15 PASSED- user selects country as United States
+2018-04-29 19:28:47 INFO  Login:302 - Step:16 PASSED- user enter 9898989898 as mobile
+2018-04-29 19:28:49 INFO  Login:319 - Step:17 PASSED- user enter Test Address as aliasadd
+2018-04-29 19:28:52 INFO  Login:336 - Step:18 PASSED- user clicks on Register button
+2018-04-29 19:28:53 INFO  Login:353 - Step:19 PASSED- user is on the MyAccountPage
+2018-04-29 19:31:54 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 19:31:59 INFO  Login:63 - Step:2 PASSED- user is on the application login page
+2018-04-29 19:32:05 INFO  Login:80 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 19:32:09 INFO  Login:114 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 19:32:11 INFO  Login:97 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 19:32:14 INFO  Login:132 - Step:6 PASSED- user clicks on Title
+2018-04-29 19:32:16 INFO  Login:149 - Step:7 PASSED- user enter Amit as firstname
+2018-04-29 19:32:17 INFO  Login:168 - Step:8 PASSED- user enter Patil as lastname
+2018-04-29 19:32:19 INFO  Login:184 - Step:9 PASSED- user enter windows@123 as password
+2018-04-29 19:32:21 INFO  Login:201 - Step:10 PASSED- user enter Yahoo as company
+2018-04-29 19:32:22 INFO  Login:217 - Step:11 PASSED- user enter First Lane Narhe as address
+2018-04-29 19:32:24 INFO  Login:234 - Step:12 PASSED- user enter Romulus as city
+2018-04-29 19:32:26 INFO  Login:252 - Step:13 PASSED- user selects City as Alabama
+2018-04-29 19:32:26 INFO  Login:267 - Step:14 PASSED- user enter 0000 as zip
+2018-04-29 19:32:28 INFO  Login:286 - Step:15 PASSED- user selects country as United States
+2018-04-29 19:32:30 INFO  Login:302 - Step:16 PASSED- user enter 9898989898 as mobile
+2018-04-29 19:32:31 INFO  Login:319 - Step:17 PASSED- user enter Test Address as aliasadd
+2018-04-29 19:32:35 INFO  Login:336 - Step:18 PASSED- user clicks on Register button
+2018-04-29 19:32:37 INFO  Login:353 - Step:19 PASSED- user is on the MyAccountPage
+2018-04-29 19:35:20 INFO  Login:52 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 19:35:24 INFO  Login:63 - Step:2 PASSED- user is on the application login page
+2018-04-29 19:35:29 INFO  Login:80 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 19:35:33 INFO  Login:114 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 19:35:35 INFO  Login:97 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 19:35:38 INFO  Login:132 - Step:6 PASSED- user clicks on Title
+2018-04-29 19:35:39 INFO  Login:149 - Step:7 PASSED- user enter Amit as firstname
+2018-04-29 19:35:41 INFO  Login:168 - Step:8 PASSED- user enter Patil as lastname
+2018-04-29 19:35:42 INFO  Login:184 - Step:9 PASSED- user enter windows@123 as password
+2018-04-29 19:35:44 INFO  Login:201 - Step:10 PASSED- user enter Yahoo as company
+2018-04-29 19:35:46 INFO  Login:217 - Step:11 PASSED- user enter First Lane Narhe as address
+2018-04-29 19:35:47 INFO  Login:234 - Step:12 PASSED- user enter Romulus as city
+2018-04-29 19:35:49 INFO  Login:252 - Step:13 PASSED- user selects City as Alabama
+2018-04-29 19:35:50 INFO  Login:267 - Step:14 PASSED- user enter 35006 as zip
+2018-04-29 19:35:51 INFO  Login:286 - Step:15 PASSED- user selects country as United States
+2018-04-29 19:35:53 INFO  Login:302 - Step:16 PASSED- user enter 9898989898 as mobile
+2018-04-29 19:35:55 INFO  Login:319 - Step:17 PASSED- user enter Test Address as aliasadd
+2018-04-29 19:36:01 INFO  Login:336 - Step:18 PASSED- user clicks on Register button
+2018-04-29 19:36:02 INFO  Login:353 - Step:19 PASSED- user is on the MyAccountPage
+2018-04-29 19:47:48 INFO  Login:50 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 19:47:53 INFO  Login:61 - Step:2 PASSED- user is on the application login page
+2018-04-29 19:47:58 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 19:48:02 INFO  Login:115 - Step:4 PASSED- user enter testuser03@gmail.com as email
+2018-04-29 19:48:04 INFO  Login:97 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 19:48:06 INFO  Login:137 - Step:6 FAILED- user fails to select title as Mr. 
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender1']"}
+Command duration or timeout: 20 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 4fb142e4-50b5-474c-bdc8-de276a820289
+*** Element info: {Using=xpath, value=//input[@id='id_gender1']}
+2018-04-29 19:48:41 INFO  Login:50 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-29 19:48:47 INFO  Login:61 - Step:2 PASSED- user is on the application login page
+2018-04-29 19:48:52 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-29 19:48:55 INFO  Login:115 - Step:4 PASSED- user enter testuser04@gmail.com as email
+2018-04-29 19:48:58 INFO  Login:97 - Step:5 PASSED- user clicks on Create an account button
+2018-04-29 19:49:00 INFO  Login:132 - Step:6 PASSED- user clicks on Title
+2018-04-29 19:49:02 INFO  Login:150 - Step:7 PASSED- user enter Amit as firstname
+2018-04-29 19:49:04 INFO  Login:168 - Step:8 PASSED- user enter Patil as lastname
+2018-04-29 19:49:06 INFO  Login:185 - Step:9 PASSED- user enter windows@123 as password
+2018-04-29 19:49:07 INFO  Login:203 - Step:10 PASSED- user enter Yahoo as company
+2018-04-29 19:49:09 INFO  Login:220 - Step:11 PASSED- user enter First Lane Narhe as address
+2018-04-29 19:49:11 INFO  Login:238 - Step:12 PASSED- user enter Romulus as city
+2018-04-29 19:49:12 INFO  Login:257 - Step:13 PASSED- user selects City as Alabama
+2018-04-29 19:49:13 INFO  Login:273 - Step:14 PASSED- user enter 35006 as zip
+2018-04-29 19:49:15 INFO  Login:293 - Step:15 PASSED- user selects country as United States
+2018-04-29 19:49:16 INFO  Login:310 - Step:16 PASSED- user enter 9898989898 as mobile
+2018-04-29 19:49:18 INFO  Login:328 - Step:17 PASSED- user enter Test Address as aliasadd
+2018-04-29 19:49:22 INFO  Login:346 - Step:18 PASSED- user clicks on Register button
+2018-04-29 19:49:23 INFO  Login:364 - Step:19 PASSED- user is on the MyAccountPage
+2018-04-30 10:50:19 INFO  Login:50 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-30 10:50:24 INFO  Login:61 - Step:2 PASSED- user is on the application login page
+2018-04-30 10:50:28 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-30 10:50:31 INFO  Login:115 - Step:4 PASSED- user enter testuser04@gmail.com as email
+2018-04-30 10:50:33 INFO  Login:97 - Step:5 PASSED- user clicks on Create an account button
+2018-04-30 10:50:35 INFO  Login:137 - Step:6 FAILED- user fails to select title as Mr. 
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='id_gender1']"}
+Command duration or timeout: 31 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 03136c50-b6ab-4a04-80a8-c050d10e12ba
+*** Element info: {Using=xpath, value=//input[@id='id_gender1']}
