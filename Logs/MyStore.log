@@ -713,3 +713,65 @@ Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
 Session ID: 03136c50-b6ab-4a04-80a8-c050d10e12ba
 *** Element info: {Using=xpath, value=//input[@id='id_gender1']}
+2018-04-30 16:29:42 INFO  Login:50 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-30 16:29:46 INFO  Login:61 - Step:2 PASSED- user is on the application login page
+2018-04-30 16:29:50 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-30 16:29:55 INFO  Login:115 - Step:4 PASSED- user enter testuser04@.com as email
+2018-04-30 16:29:57 INFO  Login:97 - Step:5 PASSED- user clicks on Create an account button
+2018-04-30 16:30:00 INFO  Login:383 - Step:6 PASSED- user gets error message starting with Invalid email address. message above the login frame
+2018-04-30 17:15:27 INFO  Login:50 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-30 17:15:31 INFO  Login:61 - Step:2 PASSED- user is on the application login page
+2018-04-30 17:15:35 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-30 17:15:40 INFO  MyAccounts:39 - Step:1PASSED- user enters email id
+2018-04-30 17:15:41 INFO  MyAccounts:62 - Step:2 FAILED- user filed to enter password
+Exception Details:Unable to locate element: {"method":"xpath","selector":"//input[@id='passwrd']"}
+Command duration or timeout: 16 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 211a21b6-66e6-4311-aba7-f93e45f85895
+*** Element info: {Using=xpath, value=//input[@id='passwrd']}
+2018-04-30 17:17:01 INFO  Login:50 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-30 17:17:05 INFO  Login:61 - Step:2 PASSED- user is on the application login page
+2018-04-30 17:17:10 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-30 17:17:13 INFO  MyAccounts:39 - Step:1PASSED- user enters email id
+2018-04-30 17:17:15 INFO  MyAccounts:57 - Step:2PASSED- user enters password
+2018-04-30 17:17:19 INFO  MyAccounts:75 - Step:3PASSED- user clicks on SignIn Button
+2018-04-30 17:17:20 INFO  MyAccounts:97 - Step:4 FAILED- user failed to click on Dresses Mega Menu
+Exception Details:Element is not currently visible and so may not be interacted with
+Command duration or timeout: 16 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 69518aad-4d26-4f4f-b4d0-fba5cf8ee19b
+2018-04-30 17:18:13 INFO  Login:50 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-30 17:18:17 INFO  Login:61 - Step:2 PASSED- user is on the application login page
+2018-04-30 17:18:21 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-30 17:18:25 INFO  MyAccounts:39 - Step:1PASSED- user enters email id
+2018-04-30 17:18:27 INFO  MyAccounts:57 - Step:2PASSED- user enters password
+2018-04-30 17:18:31 INFO  MyAccounts:75 - Step:3PASSED- user clicks on SignIn Button
+2018-04-30 17:18:32 INFO  MyAccounts:97 - Step:4 FAILED- user failed to click on Dresses Mega Menu
+Exception Details:Element is not currently visible and so may not be interacted with
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: 5070119b-bb44-411e-b3ee-c40d3ea61983
+2018-04-30 17:19:58 INFO  Login:50 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-04-30 17:20:02 INFO  Login:61 - Step:2 PASSED- user is on the application login page
+2018-04-30 17:20:06 INFO  Login:79 - Step:3 PASSED- user clicks on SignInLink
+2018-04-30 17:20:10 INFO  MyAccounts:39 - Step:1PASSED- user enters email id
+2018-04-30 17:20:12 INFO  MyAccounts:57 - Step:2PASSED- user enters password
+2018-04-30 17:20:15 INFO  MyAccounts:75 - Step:3PASSED- user clicks on SignIn Button
+2018-04-30 17:20:19 INFO  MyAccounts:97 - Step:4 FAILED- user failed to click on Dresses Mega Menu
+Exception Details:Element is not currently visible and so may not be interacted with
+Command duration or timeout: 15 milliseconds
+Build info: version: '2.53.0', revision: '35ae25b1534ae328c771e0856c93e187490ca824', time: '2016-03-15 10:43:46'
+System info: host: 'LAPTOP-S9QV7E96', ip: '192.168.0.7', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=45.0.2, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: f97f69a7-8aa6-4bbf-bf6b-cf5c813eaf39

@@ -87,10 +87,9 @@ WebDriver localdriverobject;
 	@FindBy(how=How.XPATH, using="//button[@id='submitAccount']")
 	public WebElement Register_button;
 	
-	//=======================Invalid Email error=======================================
-	@FindBy(how=How.XPATH, using="//div[@id='create_account_error']")
+	@FindBy(how=How.XPATH, using=".//*[@id='create_account_error']")
 	public WebElement invalidEmail_error;
-			
+	
 }
 
 

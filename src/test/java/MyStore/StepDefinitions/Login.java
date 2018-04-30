@@ -101,7 +101,7 @@ public class Login {
 	    		String message = "Step:" + (counter++) + " FAILED- user failed to click on Create an account button";
 				logger.info(message);
 				HTMLReportGenerator.StepDetails("FAIL", "Create and account button", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
-				Assert.assertTrue(false);
+				Assert.assertTrue(false);				
 	    	}
 	    }
 	    	
@@ -371,7 +371,26 @@ public class Login {
 				Assert.assertTrue(false);
 				}
         	}
-	
+        
+        @Then("^user receives an errormessage saying \"(.*)\"$")
+        public void Invalid_Errror(String errormessage) throws IOException {
+            try {
+            	Thread.sleep(2000);
+               String errormsg =loginpageobj.invalidEmail_error.getText();
+               Assert.assertEquals(errormessage, errormsg);
+               System.out.println(errormsg+" --------------------");
+               String _message = "Step:"+(counter++)+" PASSED- user gets error message starting with "+errormsg+" message above the login frame";
+               logger.info(_message);
+         HTMLReportGenerator.StepDetails("PASS", "Invalid_Errror", errormsg, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+      }
+            catch(Exception ex) {
+               String _message = "Step:"+(counter++)+" FAILED- user failed to get the error message\nException Details:"+ex.getLocalizedMessage();
+         logger.info(_message);
+         HTMLReportGenerator.StepDetails("FAIL", "Invalid_Errror", errormessage, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+         Assert.assertTrue(false);
+      }
+            }
+        
        @Before()
        public void BeforeEveryScenario(Scenario scenario) throws UnknownHostException{
     	   counter = 1;
