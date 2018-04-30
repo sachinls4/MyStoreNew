@@ -155,6 +155,7 @@ public class MyAccounts {
        @After()
        public void AfterEveryScenario(Scenario scenario) {
     	   counter = 0;
+    	   baseclass.driver.close();
     	   HTMLReportGenerator.TestCaseEnd();
     	   HTMLReportGenerator.TestSuiteEnd();    	   
     	   }
