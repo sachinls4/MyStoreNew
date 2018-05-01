@@ -880,3 +880,35 @@ Session ID: ca5678d2-dad0-49b0-97fc-35098e1c52ef
 2018-05-01 09:34:40 INFO  MyAccounts:96 - Step:4PASSED- user clicks on Dresses Mega Menu
 2018-05-01 09:34:43 INFO  MyAccounts:113 - Step:5PASSED- user clicks on Summer Dresses Mega Menu
 2018-05-01 09:34:50 INFO  MyAccounts:132 - Step:6PASSED- user clicks on Summer Dresses Mega Menu
+2018-05-01 09:46:37 INFO  Login:48 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-05-01 09:46:41 INFO  Login:58 - Step:2 PASSED- user is on the application login page
+2018-05-01 09:47:31 INFO  Login:48 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-05-01 09:47:35 INFO  Login:58 - Step:2 PASSED- user is on the application login page
+2018-05-01 09:47:39 INFO  Login:76 - Step:3 PASSED- user clicks on SignInLink
+2018-05-01 09:47:42 INFO  MyAccounts:30 - Step:1PASSED- user enters email id
+2018-05-01 09:57:31 INFO  Login:48 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-05-01 09:57:34 INFO  Login:58 - Step:2 PASSED- user is on the application login page
+2018-05-01 09:57:40 INFO  MyAccounts:91 - Step:1 FAILED- user failed to click on Dresses Mega Menu
+Exception Details:null
+2018-05-01 09:58:51 INFO  Login:48 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-05-01 09:59:10 INFO  Login:58 - Step:2 PASSED- user is on the application login page
+2018-05-01 09:59:15 INFO  MyAccounts:91 - Step:1 FAILED- user failed to click on Dresses Mega Menu
+Exception Details:null
+2018-05-01 09:59:55 INFO  Login:48 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-05-01 10:00:09 INFO  Login:58 - Step:2 PASSED- user is on the application login page
+2018-05-01 10:01:54 INFO  MyAccounts:91 - Step:1 FAILED- user failed to click on Dresses Mega Menu
+Exception Details:null
+2018-05-01 10:02:47 INFO  Login:48 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-05-01 10:02:52 INFO  Login:58 - Step:2 PASSED- user is on the application login page
+2018-05-01 10:02:55 INFO  Login:76 - Step:3 PASSED- user clicks on SignInLink
+2018-05-01 10:03:01 INFO  MyAccounts:91 - Step:1 FAILED- user failed to click on Dresses Mega Menu
+Exception Details:null
+2018-05-01 10:20:08 INFO  Login:48 - Step:1 PASSED: user enter the url as http://automationpractice.com/index.php
+2018-05-01 10:20:12 INFO  Login:58 - Step:2 PASSED- user is on the application login page
+2018-05-01 10:20:16 INFO  Login:76 - Step:3 PASSED- user clicks on SignInLink
+2018-05-01 10:20:19 INFO  MyAccounts:30 - Step:1PASSED- user enters email id
+2018-05-01 10:20:21 INFO  MyAccounts:48 - Step:2PASSED- user enters password
+2018-05-01 10:20:24 INFO  MyAccounts:66 - Step:3PASSED- user clicks on SignIn Button
+2018-05-01 10:20:27 INFO  MyAccounts:86 - Step:4PASSED- user clicks on Dresses Mega Menu
+2018-05-01 10:20:31 INFO  MyAccounts:103 - Step:5PASSED- user clicks on Summer Dresses Mega Menu
+2018-05-01 10:20:37 INFO  MyAccounts:122 - Step:6PASSED- user clicks on Summer Dresses Mega Menu

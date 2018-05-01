@@ -130,4 +130,31 @@ public class MyAccounts {
 		}
 	}
 
+	@And("^user selects Sort by drop down value \"([^\"]*)\"$")
+	public void selectSortByValue(String sortBy) throws Exception {
+		try {
+		Thread.sleep(2000);
+		// myaccountpageobj.productSortDropDown.click();
+		myaccountpageobj.productSortDropDown.sendKeys(sortBy);
+			String message = "Step:" + (counter++) + "PASSED- user selects " + sortBy + " value";
+			logger.info(message);
+			HTMLReportGenerator.StepDetails("PASS", "selectSortByValue", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+		} catch (Exception ex) {
+			String message = "Step:" + (counter++) + " FAILED- user failed select the SortBy Value\nException Details:"
+					+ ex.getLocalizedMessage();
+			logger.info(message);
+			HTMLReportGenerator.StepDetails("FAIL", "selectSortByValue", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			Assert.assertTrue(false);
+		}
+
+	}
+
+	@Then("^user verifies that the products are sorted based on the selected Sort by value$")
+	public void verifyProductSortBasedOnSelectedSortByValue() throws Exception {
+
+
+	}
+
 }

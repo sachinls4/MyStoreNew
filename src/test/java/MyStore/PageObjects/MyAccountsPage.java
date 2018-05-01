@@ -35,5 +35,7 @@ public class MyAccountsPage {
 	@FindBy(how=How.XPATH, using="//span[@class='cat-name']")
 	public WebElement summer_Dresses_Landing_Page;
 
+	@FindBy(how = How.XPATH, using = "//select[@id='selectProductSort']")
+	public WebElement productSortDropDown;
 
 }
