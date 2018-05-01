@@ -5,13 +5,12 @@
 @Login
 Feature: Login Feature
 
-
-    Background: user is successfully logged in
+  Background: user is successfully logged in
     Given user opens the "Firefox" browser
     Given user enters the url "http://automationpractice.com/index.php"
-    
-    @EndToEnd
-    Scenario: Register a user with Valid email address
+
+  @EndToEnd
+  Scenario: Register a user with Valid email address
     Given user is on the application login page
     And user clicks on Sign in link
     And user enters an email address as "testuser04@gmail.com"
@@ -30,18 +29,17 @@ Feature: Login Feature
     And user enters AliasAddress as "Test Address"
     And user clicks on Register button
     Then user lands on the MyAccount page
-    
-    
-    @EndToEnd
-    Scenario: Register a user with invalid email address
+
+  @EndToEnd
+  Scenario: Register a user with invalid email address
     Given user is on the application login page
     And user clicks on Sign in link
     And user enters an email address as "testuser04@.com"
     And user clicks on Create an account button
     Then user receives an errormessage saying "Invalid email address."
-    
-    @SmokeTest
-    Scenario: Verify that the Summer Dresses mega menu works
+
+  @SmokeTest
+  Scenario: Verify that the Summer Dresses mega menu works
     Given user is on the application login page
     And user clicks on Sign in link
     And an existing user enters an email address as "testuser04@gmail.com"
@@ -49,4 +47,4 @@ Feature: Login Feature
     And user clicks on SignIn button
     And user clicks on Dresses mega menu
     And user clicks on Summer Dresses mega menu
-    Then Summer Dresses page opens with text as "SUMMER DRESSES "    
+    Then Summer Dresses page opens with text as "SUMMER DRESSES "

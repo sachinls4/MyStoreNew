@@ -10,8 +10,8 @@ import cucumber.api.junit.Cucumber;
 		plugin = {"pretty", "html:target/cucumber"},
 		features = {"src/test/resources/FeatureCollections/Login.feature"},
 		tags={"@SmokeTest"}
-//		dryRun=true
-)
+		//		dryRun=true
+		)
 public class RunnerClass {
 }
 /*
@@ -23,4 +23,4 @@ tags={"@SmokeTest"}
 public class runTest {
 
 }
-*/
+ */
