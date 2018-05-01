@@ -14,6 +14,7 @@ public class MyAccountsPage {
 		PageFactory.initElements(driver, this);
 		this.localdriverobject=driver;
 		System.out.println("INSIDE MyAccountsPage CONSTRUCTOR");
+		System.out.println("Test Amit");
 	}
 
 	@FindBy(how = How.XPATH, using = "(//div[@id='block_top_menu']//a[@title='Dresses'])[2]")
