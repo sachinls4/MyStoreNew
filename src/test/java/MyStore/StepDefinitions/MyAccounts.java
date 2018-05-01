@@ -1,26 +1,16 @@
 package MyStore.StepDefinitions;
 
 import java.io.IOException;
-import java.net.UnknownHostException;
-import java.util.concurrent.TimeUnit;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.ui.Select;
-import org.openqa.selenium.support.ui.WebDriverWait;
 import org.junit.Assert;
 
 import MyStore.Config.*;
 import MyStore.PageObjects.LoginPage;
 import MyStore.PageObjects.MyAccountsPage;
-import cucumber.api.Scenario;
-import cucumber.api.java.After;
-import cucumber.api.java.Before;
 import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 
 public class MyAccounts {
@@ -126,7 +116,7 @@ public class MyAccounts {
 	public void verifySummerDressesPageOpens(String summerDressesExpectedPageText) throws IOException {
 		try {
 			Thread.sleep(3000);
-			String summerDressesActualPageText = myaccountpageobj.summer_Dresses_Page.getText();
+			String summerDressesActualPageText = myaccountpageobj.summer_Dresses_Landing_Page.getText();
 			Assert.assertEquals(summerDressesExpectedPageText, summerDressesActualPageText);
 			String message = "Step:"+(counter++)+"PASSED- user clicks on Summer Dresses Mega Menu";
 			logger.info(message);

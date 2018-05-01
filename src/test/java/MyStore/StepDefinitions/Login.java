@@ -29,8 +29,6 @@ public class Login {
 	int counter = 1;
 	MyAccountsPage myaccountpageobj=null;
 
-
-
 	@Given("^user opens the \"([^\"]*)\" browser$")
 	public void OpenBrowser(String BrowserName) {
 		if (BrowserName.equalsIgnoreCase("firefox")) {
@@ -49,7 +47,6 @@ public class Login {
 		String message = "Step:" + (counter++) + " PASSED: user enter the url as " + URL;
 		logger.info(message);
 		HTMLReportGenerator.StepDetails("PASS", "LaunchApplication", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
-
 	}
 
 	@Given("^user is on the application login page$")
@@ -394,14 +391,13 @@ public class Login {
 	@Before()
 	public void BeforeEveryScenario(Scenario scenario) throws UnknownHostException{
 		counter = 1;
-		System.out.println("new scenario is started "+scenario.getName());
 		if(Config.listofsuite==null){
 			Config.listofsuite=scenario.getSourceTagNames();
 			HTMLReportGenerator.TestSuiteStart("D:\\smoke.html", "Test1");
 		}
 		HTMLReportGenerator.TestSuiteStart("D:\\smoke.html", "Sachin");
 		HTMLReportGenerator.TestCaseStart(scenario.getName(), scenario.getLines().toString());
-		System.out.println("new scenario is started "+scenario.getName());
+		System.out.println("new scenario is started " + scenario.getName());
 	}
 
 	@After()
