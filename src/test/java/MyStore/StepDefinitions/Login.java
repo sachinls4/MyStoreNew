@@ -46,7 +46,8 @@ public class Login {
 		baseclass.driver.manage().window().maximize();
 		String message = "Step:" + (counter++) + " PASSED: user enter the url as " + URL;
 		logger.info(message);
-		HTMLReportGenerator.StepDetails("PASS", "LaunchApplication", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+		HTMLReportGenerator.StepDetails("PASS", "LaunchApplication", message,
+				TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 	}
 
 	@Given("^user is on the application login page$")
@@ -56,12 +57,16 @@ public class Login {
 			loginpageobj = new LoginPage(baseclass.driver);
 			String message = "Step:" + (counter++) + " PASSED- user is on the application login page";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "LoginPage", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "LoginPage", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch (Exception ex) {
-			String message = "Step:" + (counter++)+ " FAILED- user is NOT on the application login page\nException Details: " + ex.getLocalizedMessage();
+			String message = "Step:" + (counter++)
+					+ " FAILED- user is NOT on the application login page\nException Details: "
+					+ ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "LoginPage", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "LoginPage", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -74,11 +79,14 @@ public class Login {
 			loginpageobj.SignInLink.click();
 			String message = "Step:" + (counter++) + " PASSED- user clicks on SignInLink";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "SignInLink", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "SignInLink", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		} catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user is failed to click on Sign In link\nException Details:"	+ e.getLocalizedMessage();
+			String message = "Step:" + (counter++)
+					+ "FAILED- user is failed to click on Sign In link\nException Details:" + e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "SignInLink", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "SignInLink", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -92,12 +100,14 @@ public class Login {
 			loginpageobj.Create_Account_button.click();
 			String message = "Step:" + (counter++) + " PASSED- user clicks on Create an account button";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "Create and account button", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "Create and account button", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
 			String message = "Step:" + (counter++) + " FAILED- user failed to click on Create an account button";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "Create and account button", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "Create and account button", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);				
 		}
 	}
@@ -110,12 +120,15 @@ public class Login {
 			loginpageobj.Create_Account_Email.sendKeys(Email);	
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Email + " as email";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "EnterEmail", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "EnterEmail", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		} 
 		catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "Email" + e.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "Email"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "EnterEmail", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "EnterEmail", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -127,12 +140,15 @@ public class Login {
 			loginpageobj.title_mr.click();
 			String message = "Step:" + (counter++) + " PASSED- user clicks on Title";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "Title", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "Title", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		} 
 		catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user fails to select title as Mr. \nException Details:"	+ e.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user fails to select title as Mr. \nException Details:"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "Title", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "Title", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -145,12 +161,15 @@ public class Login {
 			loginpageobj.cust_first_name.sendKeys(FirstName);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + FirstName + " as firstname";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "FirstName", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "FirstName", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "FirstName" + e.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "FirstName"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "FirstName", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "FirstName", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -163,11 +182,14 @@ public class Login {
 			loginpageobj.cust_last_name.sendKeys(LastName);	
 			String message = "Step:" + (counter++) + " PASSED- user enter " + LastName + " as lastname";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "LastName", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "LastName", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		} catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "LastName" + e.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "LastName"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "LastName", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "LastName", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -180,7 +202,8 @@ public class Login {
 			loginpageobj.password.sendKeys(Password);	
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Password + " as password";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "EnterPassword", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "EnterPassword", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch (Exception e) {
 			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "Password" + e.getLocalizedMessage();
@@ -198,11 +221,14 @@ public class Login {
 			loginpageobj.company.sendKeys(Company);	
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Company + " as company";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "EnterCompany", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "EnterCompany", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		} catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "Company" + e.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "Company"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "EnterCompany", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "EnterCompany", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -215,11 +241,14 @@ public class Login {
 			loginpageobj.address1.sendKeys(Address);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Address + " as address";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "EnterAddress", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "EnterAddress", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		} catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "Address" + e.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "Address"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "EnterAddress", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "EnterAddress", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -233,11 +262,14 @@ public class Login {
 			loginpageobj.city.sendKeys(City);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + City + " as city";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "Enter_City", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "Enter_City", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		} catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "City" + e.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "City"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "Enter_City", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "Enter_City", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -252,12 +284,15 @@ public class Login {
 			loginpageobj.state.sendKeys(Keys.TAB);
 			String message = "Step:"+(counter++)+" PASSED- user selects City as "+State;
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "SelectState", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "SelectState", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String message = "Step:"+(counter++)+" PASSED- user selects City as "+State+"\nException Details:"+ex.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " PASSED- user selects City as " + State + "\nException Details:"
+					+ ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "SelectState", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "SelectState", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -268,12 +303,15 @@ public class Login {
 			loginpageobj.post_code.sendKeys(ZipCode);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + ZipCode + " as zip";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "Enter_ZipCode", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "Enter_ZipCode", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "ZipCode" + e.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "ZipCode"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "Enter_ZipCode", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "Enter_ZipCode", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -288,12 +326,15 @@ public class Login {
 			loginpageobj.country.sendKeys(Keys.TAB);
 			String message = "Step:"+(counter++)+" PASSED- user selects country as "+Country;
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "SelectCountry", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "SelectCountry", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String message = "Step:"+(counter++)+" PASSED- user selects country as "+Country+"\nException Details:"+ex.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " PASSED- user selects country as " + Country
+					+ "\nException Details:" + ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "SelectCountry", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "SelectCountry", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -305,12 +346,14 @@ public class Login {
 			loginpageobj.mobile_phone.sendKeys(Mobile);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Mobile + " as mobile";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "Enter_Mobile", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "Enter_Mobile", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch (Exception e) {
 			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "mobile" + e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "Enter_Mobile", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "Enter_Mobile", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -323,12 +366,15 @@ public class Login {
 			loginpageobj.alias_address.sendKeys(AliasAddress);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + AliasAddress + " as aliasadd";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "Enter_Alias_Address", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "Enter_Alias_Address", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "aliasadd" + e.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user Failed to enter " + "aliasadd"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "Enter_Alias_Address", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "Enter_Alias_Address", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -341,12 +387,16 @@ public class Login {
 			loginpageobj.Register_button.click();
 			String message = "Step:" + (counter++) + " PASSED- user clicks on Register button";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "Register_button", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "Register_button", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch (Exception e) {
-			String message = "Step:" + (counter++) + " FAILED- user is failed to click on Register button\nException Details:"	+ e.getLocalizedMessage();
+			String message = "Step:" + (counter++)
+					+ " FAILED- user is failed to click on Register button\nException Details:"
+					+ e.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "Register_button", message,TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "Register_button", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			e.printStackTrace();
 			Assert.assertTrue(false);
 		}
@@ -359,12 +409,15 @@ public class Login {
 			myaccountpageobj=new MyAccountsPage(baseclass.driver);
 			String message = "Step:"+(counter++)+" PASSED- user is on the MyAccountPage";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "MyAccount", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "MyAccount", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String message = "Step:"+(counter++)+" FAILED- user is on the MyAccountPage\nException Details:"+ex.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user is on the MyAccountPage\nException Details:"
+					+ ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "MyAccount", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "MyAccount", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -376,14 +429,18 @@ public class Login {
 			String errormsg =loginpageobj.invalidEmail_error.getText();
 			Assert.assertEquals(errormessage, errormsg);
 			System.out.println(errormsg+" --------------------");
-			String _message = "Step:"+(counter++)+" PASSED- user gets error message starting with "+errormsg+" message above the login frame";
+			String _message = "Step:" + (counter++) + " PASSED- user gets error message starting with " + errormsg
+					+ " message above the login frame";
 			logger.info(_message);
-			HTMLReportGenerator.StepDetails("PASS", "Invalid_Errror", errormsg, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "Invalid_Errror", errormsg,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String _message = "Step:"+(counter++)+" FAILED- user failed to get the error message\nException Details:"+ex.getLocalizedMessage();
+			String _message = "Step:" + (counter++)
+					+ " FAILED- user failed to get the error message\nException Details:" + ex.getLocalizedMessage();
 			logger.info(_message);
-			HTMLReportGenerator.StepDetails("FAIL", "Invalid_Errror", errormessage, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "Invalid_Errror", errormessage,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}

@@ -28,12 +28,15 @@ public class MyAccounts {
 			myaccountpageobj.email_Address_Text_Box.sendKeys(emailAddress);
 			String message = "Step:"+(counter++)+"PASSED- user enters email id";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "existingUserEmailAddress", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "existingUserEmailAddress", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String message = "Step:"+(counter++)+" FAILED- user filed to enter email id\nException Details:"+ex.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user filed to enter email id\nException Details:"
+					+ ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "existingUserEmailAddress", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "existingUserEmailAddress", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -46,12 +49,15 @@ public class MyAccounts {
 			myaccountpageobj.password_Text_Box.sendKeys(password);
 			String message = "Step:"+(counter++)+"PASSED- user enters password";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "existingUserPassword", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "existingUserPassword", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String message = "Step:"+(counter++)+" FAILED- user filed to enter password\nException Details:"+ex.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user filed to enter password\nException Details:"
+					+ ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "existingUserPassword", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "existingUserPassword", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -64,12 +70,15 @@ public class MyAccounts {
 			myaccountpageobj.signIn_Button.click();
 			String message = "Step:"+(counter++)+"PASSED- user clicks on SignIn Button";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "clickOnSignInButton", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "clickOnSignInButton", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String message = "Step:"+(counter++)+" FAILED- user filed click Sign In button\nException Details:"+ex.getLocalizedMessage();
+			String message = "Step:" + (counter++) + " FAILED- user filed click Sign In button\nException Details:"
+					+ ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "clickOnSignInButton", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "clickOnSignInButton", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -84,12 +93,16 @@ public class MyAccounts {
 			//		myaccountpageobj.dresses_Menu.click();
 			String message = "Step:"+(counter++)+"PASSED- user clicks on Dresses Mega Menu";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "clickOnDressesMegaMenu", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "clickOnDressesMegaMenu", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String message = "Step:"+(counter++)+" FAILED- user failed to click on Dresses Mega Menu\nException Details:"+ex.getLocalizedMessage();
+			String message = "Step:" + (counter++)
+					+ " FAILED- user failed to click on Dresses Mega Menu\nException Details:"
+					+ ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "clickOnDressesMegaMenu", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "clickOnDressesMegaMenu", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -101,12 +114,16 @@ public class MyAccounts {
 			myaccountpageobj.summer_Dresses_Menu.click();
 			String message = "Step:"+(counter++)+"PASSED- user clicks on Summer Dresses Mega Menu";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "clickOnSummerDressesMegaMenu", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "clickOnSummerDressesMegaMenu", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String message = "Step:"+(counter++)+" FAILED- user failed to click on Summer Dresses Mega Menu\nException Details:"+ex.getLocalizedMessage();
+			String message = "Step:" + (counter++)
+					+ " FAILED- user failed to click on Summer Dresses Mega Menu\nException Details:"
+					+ ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "clickOnSummerDressesMegaMenu", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "clickOnSummerDressesMegaMenu", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -120,12 +137,16 @@ public class MyAccounts {
 			Assert.assertEquals(summerDressesExpectedPageText, summerDressesActualPageText);
 			String message = "Step:"+(counter++)+"PASSED- user clicks on Summer Dresses Mega Menu";
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("PASS", "verifySummerDressesPageOpens", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("PASS", "verifySummerDressesPageOpens", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 		}
 		catch(Exception ex) {
-			String message = "Step:"+(counter++)+" FAILED- user failed to click on Summer Dresses Mega Menu\nException Details:"+ex.getLocalizedMessage();
+			String message = "Step:" + (counter++)
+					+ " FAILED- user failed to click on Summer Dresses Mega Menu\nException Details:"
+					+ ex.getLocalizedMessage();
 			logger.info(message);
-			HTMLReportGenerator.StepDetails("FAIL", "verifySummerDressesPageOpens", message, TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			HTMLReportGenerator.StepDetails("FAIL", "verifySummerDressesPageOpens", message,
+					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
 			Assert.assertTrue(false);
 		}
 	}
@@ -133,9 +154,9 @@ public class MyAccounts {
 	@And("^user selects Sort by drop down value \"([^\"]*)\"$")
 	public void selectSortByValue(String sortBy) throws Exception {
 		try {
-		Thread.sleep(2000);
-		// myaccountpageobj.productSortDropDown.click();
-		myaccountpageobj.productSortDropDown.sendKeys(sortBy);
+			Thread.sleep(2000);
+			// myaccountpageobj.productSortDropDown.click();
+			myaccountpageobj.productSortDropDown.sendKeys(sortBy);
 			String message = "Step:" + (counter++) + "PASSED- user selects " + sortBy + " value";
 			logger.info(message);
 			HTMLReportGenerator.StepDetails("PASS", "selectSortByValue", message,
@@ -153,6 +174,13 @@ public class MyAccounts {
 
 	@Then("^user verifies that the products are sorted based on the selected Sort by value$")
 	public void verifyProductSortBasedOnSelectedSortByValue() throws Exception {
+		try {
+			Thread.sleep(2000);
+
+		}
+		catch (Exception ex) {
+
+		}
 
 
 	}

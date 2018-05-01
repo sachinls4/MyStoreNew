@@ -8,8 +8,9 @@ import cucumber.api.junit.Cucumber;
 @CucumberOptions(
 		monochrome=true, 
 		plugin = {"pretty", "html:target/cucumber"},
-		features = {"src/test/resources/FeatureCollections/Login.feature"},
-		tags = { "@SmokeTest" }, dryRun = true
+		features = { "src/test/resources/FeatureCollections/" },
+		tags = { "@SmokeTest" }
+//		dryRun = true
 		)
 public class RunnerClass {
 }
