@@ -1,6 +1,7 @@
 package MyStore.StepDefinitions;
 
 import java.io.IOException;
+import java.util.ArrayList;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
@@ -155,7 +156,6 @@ public class MyAccounts {
 	public void selectSortByValue(String sortBy) throws Exception {
 		try {
 			Thread.sleep(2000);
-			// myaccountpageobj.productSortDropDown.click();
 			myaccountpageobj.productSortDropDown.sendKeys(sortBy);
 			String message = "Step:" + (counter++) + "PASSED- user selects " + sortBy + " value";
 			logger.info(message);
@@ -176,6 +176,33 @@ public class MyAccounts {
 	public void verifyProductSortBasedOnSelectedSortByValue() throws Exception {
 		try {
 			Thread.sleep(2000);
+			int temp = myaccountpageobj.productPrice.size();
+			System.out.println("the size of the price list is: " + temp);
+			for (int i = 0; i < temp; i = i + 1) {
+				System.out.println(myaccountpageobj.productPrice.get(i).getText());
+			}
+			
+			 ArrayList<Float> priceList = new ArrayList<Float>();
+			    for (int i = 0; i<temp; i=i+1) {
+				priceList.add(Float.parseFloat(myaccountpageobj.productPrice.get(i).getText()));
+				System.out.println("The price list now is: " + priceList);
+			    }
+			    
+
+
+			// Boolean ascendingCheck;
+			// if(!ascendingCheck(priceList)){
+			// Assert.fail("Not is ascending order");
+			// }
+			//
+			// Boolean ascendingCheck(ArrayList<Float> data){
+			// for (int i = 0; i < data.size()-1; i++) {
+			// if (data.get(i) > data.get(i+1)) {
+			// return false;
+			// }
+			// }
+			// return true;
+			// }
 
 		}
 		catch (Exception ex) {

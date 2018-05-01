@@ -1,5 +1,7 @@
 package MyStore.PageObjects;
 
+import java.util.List;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -37,5 +39,8 @@ public class MyAccountsPage {
 
 	@FindBy(how = How.XPATH, using = "//select[@id='selectProductSort']")
 	public WebElement productSortDropDown;
+
+	@FindBy(how = How.XPATH, using = "//div[@class='right-block']//span[@class='price product-price']")
+	public List<WebElement> productPrice;
 
 }
