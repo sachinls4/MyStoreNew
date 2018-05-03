@@ -190,11 +190,15 @@ public class MyAccounts {
 		try {
 			Thread.sleep(4000);
 
+			// Declaring 2 arrays , 1 for prices with $ sign, so it's a String array i.e.
+			// priceList. Another array is declared for storing formatted pricelist i.e.
+			// priceListInFloat without $
 			ArrayList<String> priceList = new ArrayList<String>();
-			int temp1 = myaccountpageobj.productPrice.size();
 			ArrayList<Double> priceListInFloat = new ArrayList<Double>();
 
-			for (int i = 0; i < temp1; i = i + 1) {
+			int numberOfProducts = myaccountpageobj.productPrice.size();
+
+			for (int i = 0; i < numberOfProducts; i = i + 1) {
 				priceList.add(myaccountpageobj.productPrice.get(i).getText());
 				String ss = myaccountpageobj.productPrice.get(i).getText();
 				Number number = NumberFormat.getCurrencyInstance(Locale.US).parse(ss);
@@ -204,7 +208,10 @@ public class MyAccounts {
 				priceListInFloat.add(i, (Double) number);
 
 			}
+			// Copying Array Taken from Webpage to another array
 			ArrayList<Double> sortedPriceListInFloat = new ArrayList<Double>(priceListInFloat);
+
+
 			Collections.sort(sortedPriceListInFloat);
 			if (sortedPriceListInFloat.equals(priceListInFloat)) {
 				System.out.println("List is sorted");
