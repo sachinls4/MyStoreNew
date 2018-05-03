@@ -15,6 +15,7 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.junit.Assert;
+import org.openqa.selenium.*;
 
 import MyStore.Config.*;
 import MyStore.PageObjects.LoginPage;
@@ -97,9 +98,7 @@ public class MyAccounts {
 		try {
 			Thread.sleep(3000);
 			Actions action = new Actions(baseclass.driver);
-			//		WebElement we = webdriver.findElement(By.xpath("//html/body/div[13]/ul/li[4]/a"));
 			action.moveToElement(myaccountpageobj.dresses_Menu).build().perform();
-			//		myaccountpageobj.dresses_Menu.click();
 			String message = "Step:"+(counter++)+"PASSED- user clicks on Dresses Mega Menu";
 			logger.info(message);
 			HTMLReportGenerator.StepDetails("PASS", "clickOnDressesMegaMenu", message,
@@ -169,7 +168,7 @@ public class MyAccounts {
 			org.openqa.selenium.Point coordinates = myaccountpageobj.productSortDropDown.getLocation();
 			Robot robot = new Robot();
 			// WebElement markNews = driver.findElement(By.xpath("element xpath"));
-			robot.mouseMove(coordinates.x + 100, coordinates.y + 100);
+			robot.mouseMove(coordinates.x + 400, coordinates.y + 400);
 			Thread.sleep(2000);
 			String message = "Step:" + (counter++) + "PASSED- user selects " + sortBy + " value";
 			logger.info(message);
@@ -190,61 +189,28 @@ public class MyAccounts {
 	public void verifyProductSortBasedOnSelectedSortByValue() throws Exception {
 		try {
 			Thread.sleep(4000);
-			// int temp = myaccountpageobj.productPrice.size();
-			// System.out.println("the size of the price list is: " + temp);
-			// for (int i = 0; i < temp; i = i + 1) {
-			// System.out.println(myaccountpageobj.productPrice.get(i).getText());
-			// }
 
 			ArrayList<String> priceList = new ArrayList<String>();
 			int temp1 = myaccountpageobj.productPrice.size();
 			ArrayList<Double> priceListInFloat = new ArrayList<Double>();
-
 
 			for (int i = 0; i < temp1; i = i + 1) {
 				priceList.add(myaccountpageobj.productPrice.get(i).getText());
 				String ss = myaccountpageobj.productPrice.get(i).getText();
 				Number number = NumberFormat.getCurrencyInstance(Locale.US).parse(ss);
 
-				System.out.println("The price list now is: " + ss);
-				System.out.println("The price without dollar is now: " + number);
+				// System.out.println("The price list now is: " + ss);
+				// System.out.println("The price without dollar is now: " + number);
 				priceListInFloat.add(i, (Double) number);
 
-				// System.out.println("The price list now is: " + priceList);
-
-				// String string =
-				// NumberFormat.getCurrencyInstance(Locale.GERMANY).format(123.45);
-				// Number number = NumberFormat.getCurrencyInstance(Locale.US).parse("$123.45");
-				// System.out.println("String is" + string);
-				// System.out.println("number is" + number);
 			}
 			ArrayList<Double> sortedPriceListInFloat = new ArrayList<Double>(priceListInFloat);
-
 			Collections.sort(sortedPriceListInFloat);
-
 			if (sortedPriceListInFloat.equals(priceListInFloat)) {
-
 				System.out.println("List is sorted");
-
 			} else {
 				System.out.println("List is not sorted");
-
 			}
-
-
-			// Boolean ascendingCheck;
-			// if(!ascendingCheck(priceList)){
-			// Assert.fail("Not is ascending order");
-			// }
-			//
-			// Boolean ascendingCheck(ArrayList<Float> data){
-			// for (int i = 0; i < data.size()-1; i++) {
-			// if (data.get(i) > data.get(i+1)) {
-			// return false;
-			// }
-			// }
-			// return true;
-			// }
 
 		}
 		catch (Exception ex) {
