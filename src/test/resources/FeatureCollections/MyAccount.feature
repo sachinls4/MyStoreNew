@@ -19,7 +19,7 @@ Feature: My Account Feature
     And user clicks on Dresses mega menu
     And user clicks on Summer Dresses mega menu
     And Summer Dresses page opens with text as "SUMMER DRESSES "
-    And user selects Sort by drop down value "Price: Highest first"
-    #And user selects Sort by drop down value "Price: Lowest first"
+    #And user selects Sort by drop down value "Price: Highest first"
+    And user selects Sort by drop down value "Price: Lowest first"
     #And user selects Sort by drop down value "Reference: Highest first"
     Then user verifies that the products are sorted based on the selected Sort by value

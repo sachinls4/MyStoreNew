@@ -11,8 +11,6 @@ import java.util.Locale;
 import javax.swing.plaf.synth.SynthSeparatorUI;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.junit.Assert;
 import org.openqa.selenium.*;
@@ -96,7 +94,7 @@ public class MyAccounts {
 	@And ("^user clicks on Dresses mega menu$")
 	public void clickOnDressesMegaMenu() throws IOException {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			Actions action = new Actions(baseclass.driver);
 			action.moveToElement(myaccountpageobj.dresses_Menu).build().perform();
 			String message = "Step:"+(counter++)+"PASSED- user clicks on Dresses Mega Menu";
@@ -118,7 +116,7 @@ public class MyAccounts {
 	@And ("^user clicks on Summer Dresses mega menu$")
 	public void clickOnSummerDressesMegaMenu() throws IOException {
 		try {
-			Thread.sleep(3000);		
+			Thread.sleep(1000);
 			myaccountpageobj.summer_Dresses_Menu.click();
 			String message = "Step:"+(counter++)+"PASSED- user clicks on Summer Dresses Mega Menu";
 			logger.info(message);
@@ -140,7 +138,7 @@ public class MyAccounts {
 	@Then("^Summer Dresses page opens with text as \"([^\"]*)\"$")
 	public void verifySummerDressesPageOpens(String summerDressesExpectedPageText) throws IOException {
 		try {
-			Thread.sleep(3000);
+			Thread.sleep(2000);
 			String summerDressesActualPageText = myaccountpageobj.summer_Dresses_Landing_Page.getText();
 			Assert.assertEquals(summerDressesExpectedPageText, summerDressesActualPageText);
 			String message = "Step:"+(counter++)+"PASSED- user clicks on Summer Dresses Mega Menu";
@@ -162,13 +160,12 @@ public class MyAccounts {
 	@And("^user selects Sort by drop down value \"([^\"]*)\"$")
 	public void selectSortByValue(String sortBy) throws Exception {
 		try {
-			Thread.sleep(4000);
+			Thread.sleep(2000);
 			myaccountpageobj.productSortDropDown.sendKeys(sortBy);
 			myaccountpageobj.productSortDropDown.sendKeys(Keys.TAB);
 			org.openqa.selenium.Point coordinates = myaccountpageobj.productSortDropDown.getLocation();
-			Robot robot = new Robot();
-			// WebElement markNews = driver.findElement(By.xpath("element xpath"));
-			robot.mouseMove(coordinates.x + 400, coordinates.y + 400);
+			Actions action = new Actions(baseclass.driver);
+			action.moveToElement(myaccountpageobj.labelProperties).build().perform();
 			Thread.sleep(2000);
 			String message = "Step:" + (counter++) + "PASSED- user selects " + sortBy + " value";
 			logger.info(message);
@@ -188,7 +185,7 @@ public class MyAccounts {
 	@Then("^user verifies that the products are sorted based on the selected Sort by value$")
 	public void verifyProductSortBasedOnSelectedSortByValue() throws Exception {
 		try {
-			Thread.sleep(4000);
+			Thread.sleep(2000);
 
 			// Declaring 2 arrays , 1 for prices with $ sign, so it's a String array i.e.
 			// priceList. Another array is declared for storing formatted pricelist i.e.
@@ -202,15 +199,11 @@ public class MyAccounts {
 				priceList.add(myaccountpageobj.productPrice.get(i).getText());
 				String ss = myaccountpageobj.productPrice.get(i).getText();
 				Number number = NumberFormat.getCurrencyInstance(Locale.US).parse(ss);
-
-				// System.out.println("The price list now is: " + ss);
-				// System.out.println("The price without dollar is now: " + number);
 				priceListInFloat.add(i, (Double) number);
 
 			}
 			// Copying Array Taken from Webpage to another array
 			ArrayList<Double> sortedPriceListInFloat = new ArrayList<Double>(priceListInFloat);
-
 
 			Collections.sort(sortedPriceListInFloat);
 			if (sortedPriceListInFloat.equals(priceListInFloat)) {

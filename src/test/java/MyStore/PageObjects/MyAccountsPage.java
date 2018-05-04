@@ -43,4 +43,6 @@ public class MyAccountsPage {
 	@FindBy(how = How.XPATH, using = "//div[@class='right-block']//span[@class='price product-price']")
 	public List<WebElement> productPrice;
 
+	@FindBy(how = How.XPATH, using = "//span[text()='Properties']")
+	public WebElement labelProperties;
 }
