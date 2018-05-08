@@ -7,6 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -34,7 +35,13 @@ public class Login {
 		if (BrowserName.equalsIgnoreCase("firefox")) {
 			baseclass.driver = new FirefoxDriver();
 
-		}	 
+		}
+		
+		if (BrowserName.equalsIgnoreCase("chrome")) {
+			System.setProperty("webdriver.chrome.driver", "C:\\Program Files (x86)\\Google\\Chrome\\chromedriver.exe");
+			baseclass.driver = new ChromeDriver();
+		}
+
 	}
 
 	@Given("^user enters the url \"(.*)\"$")
@@ -75,7 +82,7 @@ public class Login {
 	@And("^user clicks on Sign in link$")
 	public void SignInLink() throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.SignInLink.click();
 			String message = "Step:" + (counter++) + " PASSED- user clicks on SignInLink";
 			logger.info(message);
@@ -96,7 +103,7 @@ public class Login {
 	@Given("^user clicks on Create an account button$")
 	public void clickOnCreateAnAccountButton() throws Exception {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.Create_Account_button.click();
 			String message = "Step:" + (counter++) + " PASSED- user clicks on Create an account button";
 			logger.info(message);
@@ -116,7 +123,7 @@ public class Login {
 	@And("^user enters an email address as \"(.*)\"$")
 	public void EnterEmail(String Email) throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.Create_Account_Email.sendKeys(Email);	
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Email + " as email";
 			logger.info(message);
@@ -136,7 +143,7 @@ public class Login {
 	@And("^user selects title as Mr.$")
 	public void Title() throws IOException {
 		try {
-			Thread.sleep(2000);
+			baseclass.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 			loginpageobj.title_mr.click();
 			String message = "Step:" + (counter++) + " PASSED- user clicks on Title";
 			logger.info(message);
@@ -157,7 +164,7 @@ public class Login {
 	@And("^user enters Customer FirstName as \"(.*)\"$")
 	public void EnterFirstName(String FirstName) throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.cust_first_name.sendKeys(FirstName);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + FirstName + " as firstname";
 			logger.info(message);
@@ -178,7 +185,7 @@ public class Login {
 	@And("^user enters Customer LastName as \"(.*)\"$")
 	public void EnterLastName(String LastName) throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.cust_last_name.sendKeys(LastName);	
 			String message = "Step:" + (counter++) + " PASSED- user enter " + LastName + " as lastname";
 			logger.info(message);
@@ -198,7 +205,7 @@ public class Login {
 	@And("^user enters Password as \"(.*)\"$")
 	public void EnterPassword(String Password) throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.password.sendKeys(Password);	
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Password + " as password";
 			logger.info(message);
@@ -217,7 +224,7 @@ public class Login {
 	@And("^user enters Company as \"(.*)\"$")
 	public void EnterCompany(String Company) throws IOException {				
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.company.sendKeys(Company);	
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Company + " as company";
 			logger.info(message);
@@ -237,7 +244,7 @@ public class Login {
 	@And("^user enters Address as \"(.*)\"$")
 	public void EnterAddress(String Address) throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.address1.sendKeys(Address);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Address + " as address";
 			logger.info(message);
@@ -258,7 +265,7 @@ public class Login {
 	@And("^user enters City as \"(.*)\"$")
 	public void Enter_City(String City) throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.city.sendKeys(City);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + City + " as city";
 			logger.info(message);
@@ -278,7 +285,7 @@ public class Login {
 	@And("^user selects State as \"(.*)\"$")
 	public void SelectState(String State) throws InterruptedException, IOException{
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			Select _state = new Select (loginpageobj.state);
 			_state.selectByVisibleText(State);
 			loginpageobj.state.sendKeys(Keys.TAB);
@@ -300,6 +307,7 @@ public class Login {
 	@And("^user enters ZipCode as \"(.*)\"$")
 	public void Enter_ZipCode(String ZipCode) throws IOException {
 		try {
+			baseclass.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 			loginpageobj.post_code.sendKeys(ZipCode);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + ZipCode + " as zip";
 			logger.info(message);
@@ -320,7 +328,7 @@ public class Login {
 	@And("^user selects Country as \"(.*)\"$")
 	public void SelectCountry(String Country) throws InterruptedException, IOException{
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			Select _country = new Select (loginpageobj.country);
 			_country.selectByVisibleText(Country);
 			loginpageobj.country.sendKeys(Keys.TAB);
@@ -342,7 +350,7 @@ public class Login {
 	@And("^user enters Mobile as \"(.*)\"$")
 	public void Enter_Mobile(String Mobile) throws IOException{
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.mobile_phone.sendKeys(Mobile);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + Mobile + " as mobile";
 			logger.info(message);
@@ -362,7 +370,7 @@ public class Login {
 	@And("^user enters AliasAddress as \"(.*)\"$")
 	public void Enter_Alias_Address(String AliasAddress) throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.alias_address.sendKeys(AliasAddress);
 			String message = "Step:" + (counter++) + " PASSED- user enter " + AliasAddress + " as aliasadd";
 			logger.info(message);
@@ -383,7 +391,7 @@ public class Login {
 	@And("^user clicks on Register button$")
 	public void Register_button() throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			loginpageobj.Register_button.click();
 			String message = "Step:" + (counter++) + " PASSED- user clicks on Register button";
 			logger.info(message);
@@ -405,7 +413,7 @@ public class Login {
 	@Then("^user lands on the MyAccount page$")
 	public void MyAccount() throws IOException {
 		try {
-			Thread.sleep(1000);
+			baseclass.driver.manage().timeouts().implicitlyWait(1, TimeUnit.SECONDS);
 			myaccountpageobj=new MyAccountsPage(baseclass.driver);
 			String message = "Step:"+(counter++)+" PASSED- user is on the MyAccountPage";
 			logger.info(message);
@@ -425,7 +433,7 @@ public class Login {
 	@Then("^user receives an errormessage saying \"(.*)\"$")
 	public void Invalid_Errror(String errormessage) throws IOException {
 		try {
-			Thread.sleep(2000);
+			baseclass.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 			String errormsg =loginpageobj.invalidEmail_error.getText();
 			Assert.assertEquals(errormessage, errormsg);
 			System.out.println(errormsg+" --------------------");
