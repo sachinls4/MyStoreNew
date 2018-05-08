@@ -164,7 +164,6 @@ public class MyAccounts {
 			baseclass.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
 			myaccountpageobj.productSortDropDown.sendKeys(sortBy);
 			myaccountpageobj.productSortDropDown.sendKeys(Keys.TAB);
-			org.openqa.selenium.Point coordinates = myaccountpageobj.productSortDropDown.getLocation();
 			Actions action = new Actions(baseclass.driver);
 			action.moveToElement(myaccountpageobj.labelProperties).build().perform();
 			Thread.sleep(2000);
@@ -172,6 +171,7 @@ public class MyAccounts {
 			logger.info(message);
 			HTMLReportGenerator.StepDetails("PASS", "selectSortByValue", message,
 					TakeScreenShot.TakeScreenShot(Config.getImageFilePath(), baseclass.driver));
+			verifyProductSortBasedOnSelectedSortByValue(sortBy);
 		} catch (Exception ex) {
 			String message = "Step:" + (counter++) + " FAILED- user failed select the SortBy Value\nException Details:"
 					+ ex.getLocalizedMessage();
@@ -184,13 +184,13 @@ public class MyAccounts {
 	}
 
 	@Then("^user verifies that the products are sorted based on the selected Sort by value$")
-	public void verifyProductSortBasedOnSelectedSortByValue() throws Exception {
+	public void verifyProductSortBasedOnSelectedSortByValue(String sortBy) throws Exception {
 		try {
 			baseclass.driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-
 			// Declaring 2 arrays , 1 for prices with $ sign, so it's a String array i.e.
 			// priceList. Another array is declared for storing formatted pricelist i.e.
 			// priceListInFloat without $
+			System.out.println("sortBy Value in verifyProductSortBasedOnSelectedSortByValue method is: " + sortBy);
 			ArrayList<String> priceList = new ArrayList<String>();
 			ArrayList<Double> priceListInFloat = new ArrayList<Double>();
 
