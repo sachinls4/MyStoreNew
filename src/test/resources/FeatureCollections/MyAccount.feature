@@ -6,7 +6,7 @@
 Feature: My Account Feature
 
   Background: user is successfully logged in
-    Given user opens the "chrome" browser
+    Given user opens the "firefox" browser
     Given user enters the url "http://automationpractice.com/index.php"
   
   @SmokeTest
