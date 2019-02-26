@@ -9,7 +9,7 @@ Feature: Login Feature
     Given user opens the "Chrome" browser
     Given user enters the url "http://automationpractice.com/index.php"
 
-  @EndToEnd
+  @SmokeTest
   Scenario: Register a user with Valid email address
     Given user is on the application login page
     And user clicks on Sign in link
@@ -30,7 +30,7 @@ Feature: Login Feature
     And user clicks on Register button
     Then user lands on the MyAccount page
 
-  @EndToEnd
+  @SmokeTest
   Scenario: Register a user with invalid email address
     Given user is on the application login page
     And user clicks on Sign in link
@@ -38,7 +38,7 @@ Feature: Login Feature
     And user clicks on Create an account button
     Then user receives an errormessage saying "Invalid email address."
 
-  @EndToEnd
+  @EndToE@SmokeTestnd
   Scenario: Verify that the Summer Dresses mega menu works
     Given user is on the application login page
     And user clicks on Sign in link
