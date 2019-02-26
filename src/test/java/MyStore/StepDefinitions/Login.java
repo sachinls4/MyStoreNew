@@ -464,9 +464,9 @@ public class Login {
 		counter = 1;
 		if(Config.listofsuite==null){
 			Config.listofsuite=scenario.getSourceTagNames();
-			HTMLReportGenerator.TestSuiteStart("D:\\smoke.html", "Test1");
+			HTMLReportGenerator.TestSuiteStart("C:\\smoke.html", "TestR");
 		}
-		HTMLReportGenerator.TestSuiteStart("D:\\smoke.html", "Sachin");
+		HTMLReportGenerator.TestSuiteStart("C:\\smoke.html", "AP");
 		HTMLReportGenerator.TestCaseStart(scenario.getName(), scenario.getLines().toString());
 		System.out.println("new scenario is started " + scenario.getName());
 	}
